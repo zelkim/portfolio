@@ -1,0 +1,56 @@
+<h1>
+    ArcherAPI: Data of dlsu, for dlsu.
+</h1>
+<p><b>What data does this provide?</b></p>
+<p>Right now, the API provides the data of all classes in DLSU. (Limited to: Term 3, A.Y. 2023-2024)</p>
+<br/>
+<p>However, I have planned for it in the future to support data on professors, more description on rooms, buildings, and other things.</p>
+<br/>
+<p><b>How was this achieved?</b></p>
+<p>
+    I scraped the list of all valid course codes in DLSU through the pre-enlistment facility, searching each
+    course code from A-Z. After, I fed all those courses into the MLS through web scraping, saving the class schedules available of the term.
+</p>
+<p>
+    <br/>
+    <b>I found out the following information about Term 3, A.Y. 2023-2024:</b>
+    <li>4100~ total classes active</li>
+    <li>12,822 total courses all time in DLSU (including old/deprecated courses)</li>
+    <li>1,200~ total courses with classes active in term 3.</li>
+</p>
+<br/>
+<p>Example of class data when accessed through the API:</p>
+<div class="code-box">
+    {
+        "id": "2150",
+        "class": "COBLAW2",
+        "section": "K31",
+        "type": "HYBRID",
+        "max_slots": "45",
+        "current_slots": "40",
+        "schedules": [
+          {
+            "days": "T",
+            "time": "1615 - 1745",
+            "room": " ",
+            "prof": "SALUD, JAN RAPHAEL  RIVERA"
+          },
+          {
+            "days": "F",
+            "time": "1615 - 1745",
+            "room": "",
+            "prof": "SALUD, JAN RAPHAEL  RIVERA"
+          }
+        ]
+      }
+    
+</div>
+<p>
+(you can cross check this data through <a href="https://enroll.dlsu.edu.ph/dlsu/view_course_offerings">My.LaSalle</a> to confirm accuracy.)
+</p>
+<br/>
+<p>
+    Currently, an actual API has not been developed yet, but the raw full list of all active classes in DLSU can be found in the following github repository:
+</p>
+<br/>
+<a href="https://github.com/zelkim/archer-api">https://github.com/zelkim/archer-api</a>

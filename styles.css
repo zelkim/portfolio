@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #044024;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #83C8A7;
+}
+
+p {
+    margin: 0;
+    text-wrap: wrap;
+}
+
+hr {
+    border-width: 0.5px;
+    border-color: #1d3f2a;
+}
+
+.icon {
+    font-size: 32px;
+    position: absolute;
+    font-weight: bold;
+    top: 1em;
+    left: 1em;
+    padding: 1em; /* Adjust as needed */
+}
+
+.icon-comment {
+    font-size: 32px;
+    font-weight: lighter;
+    opacity: 0.7;
+}
+
+.item-buttons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+.item-left {
+    text-align: end;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+.rower {
+    display: block;
+    height: 100%;
+    width: 70%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 3px;
+    height: 50%;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 2 / 1;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    justify-content: baseline;
+    align-items: last baseline;
+    box-sizing: border-box;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+.box-left {
+    justify-content: right;
+}
+
+.box-bottom {
+    align-items: first baseline;
+}
+
+.box-offset-left {
+    margin-left: -40px;
+}
+
+.box-offset-right {
+    margin-left: 40px;
+}
+
+.boldify {
+    font-weight: 800;
+}
+
+.galsify {
+    font-size: 1.75em;
+}
+
+.pretzel {
+    font-size: 2.75em;
+}
+
+.gdg {
+    font-size: 1.75em;
+}
+
+.gdsc {
+    font-size: 1.5em;
+}
+
+.lscs {
+    font-size: 1.85em;
+}
+
+.peddlr {
+    font-size: 2em;
+}
+
+.archerapi {
+    font-size: 3em;
+}
+
+.pakabuhi {
+    font-size: 3em;
+}
+
+.eastviscian {
+    font-size: 1.5em;
+}
+
+.evrshs-ssg {
+    font-size: 1.5em;
+}
+
+.equitygaming {
+    font-size: 1.65em;
+}
+
+.txt {
+    text-decoration: none;
+    color: #074D2C;
+}
+
+.txt:hover {
+    font-weight: bold;
+}
+
+.information-box {
+    animation: fade;
+    transition: 3s;
+    display: none;
+    position: absolute;
+    width: 60%;
+    height: 80%; 
+    overflow: auto;
+    padding: 2em;
+    background-color: #83C8A7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0.2em;
+    margin: 1em;
+    z-index: 1001;
+}
+
+.code-box {
+    overflow: auto;
+    background-color: #074D2C;
+    color: #83C8A7;
+    white-space: pre;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0.2em;
+    margin: 1em;
+    z-index: 1001;
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes transitionToBold {
+    0% { font-weight: normal; }
+    100% { font-weight: bold; }
+}
+
+.content-link {
+    text-decoration: none;
+    text-decoration: underline;
+    color: #074D2C;
+}
+
+/*custom scorllbar*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #D1F1E2;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(89, 145, 105);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1d3f2a;
+  }
