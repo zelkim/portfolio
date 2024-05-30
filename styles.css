@@ -188,6 +188,12 @@ hr {
     z-index: 1000;
 }
 
+.footer {
+    padding-bottom: 2em;
+    bottom: 0;
+    position: absolute;
+}
+
 @keyframes fade {
     0% { opacity: 0; }
     100% { opacity: 1; }
