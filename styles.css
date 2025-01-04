@@ -194,6 +194,10 @@ hr {
     position: absolute;
 }
 
+.footer p {
+    white-space: pre;
+}
+
 @keyframes fade {
     0% { opacity: 0; }
     100% { opacity: 1; }
