@@ -1,4 +1,4 @@
-const full_text = "robenta.tech "
+const full_text = "zel.kim "
 const comments = [
     "// developer",
     "// content creator",
